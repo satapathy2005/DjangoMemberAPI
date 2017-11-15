@@ -1,0 +1,5 @@
+#May have to delete node_modules folder
+#run npm install --save-dev
+#npm install webpack@2.2.0-beta.22 --save-dev
+
+./node_modules/.bin/webpack --config webpack.config.js

@@ -1,18 +1,22 @@
-# Insta Member Api
+Insta Member Api
+----------------------------
 
 This project indicates the team member management HTTP API built in Django Framework and MySQL databases
 
-[Backend](#backend)
+Backend
+---------------------------
 
 
-# Dependencies
+ Dependencies
+ --------------------------
 * Python 3.x
 * Django
 * MySQL
 * mysqlclient
 * Django Rest Framework
 
-# Backend
+Data Model
+--------------------------
 
 A member in the database has this model:
 * id (unique)
@@ -22,7 +26,8 @@ A member in the database has this model:
 * Phone
 * Role ('general user' or 'admin user' ONLY)
 
-### Listing all members in database
+Listing all members in database
+--------------------------------
 
 Listing a member can be done with the following request:
 
@@ -49,7 +54,8 @@ Will return `200: OK` and a json response (example):
     },
     ...
     
-### Listing a single member by id
+Listing a single member by id
+------------------------------
 
 A single member from the db can be retreived with:
 
@@ -68,7 +74,8 @@ Response `200: OK` and will return a single object:
     
 or `404` and empty if no content exists for that id:
     
-### Adding a team member
+Adding a team member
+-------------------------------
 
 Adding a team member using below post method:
 
@@ -80,7 +87,8 @@ and adding json to the body of the request:
     
 http reponse `201: Created` with the created object will be returned.
     
-### Editing a team member
+Editing a team member
+------------------------------
 
 Changing a team members data can be done with the following request:
     
@@ -101,7 +109,8 @@ Http reponse `200: OK` and json object:
     "role": "admin"
     }
 
-### Deleting an object
+Deleting an object
+--------------------------------
 
 Deleting by member id:
   
