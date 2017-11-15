@@ -12,8 +12,6 @@ Backend
 * Python 3.x
 * Django
 * MySQL
-* mysqlclient
-* Django Rest Framework
 
 Data Model
 --------------------------
