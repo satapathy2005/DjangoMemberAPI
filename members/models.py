@@ -10,7 +10,7 @@ class Member(models.Model):
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     email_address = models.CharField(max_length=200, unique=True)
-    phone_number = models.CharField(max_length=20, unique=True)
+    phone_number = models.PhoneNumberField(max_length=20, unique=True)
     role = models.CharField(validators=[validate_role], max_length=8)
 
     def update(self, new_values):
